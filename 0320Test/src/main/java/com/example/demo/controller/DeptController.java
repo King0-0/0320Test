@@ -19,6 +19,7 @@ public class DeptController {
 	
 	@GetMapping("/listDept")
 	public void list(Model model) {
+		System.out.println("pull 1 충돌 테스트");
 		model.addAttribute("list",dao.findAll());
 	}
 	
